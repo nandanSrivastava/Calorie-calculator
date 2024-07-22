@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Counter</h1>
+        <div>
+            <h3>Budget</h3>
+            <input id="testing" type="text" placeholder="Budget">
+        </div>
+        <div class="food-type">
+            <script>
+                var foodType = ["Breakfast", "Lunch", "Dinner", "Snacks"];
+                for (var i = 0; i < foodType.length; i++) {
+                    document.write('<button>' + foodType[i] + '</button>');
+                }
+                </script>
+        </div>
+        <div class="food-item">
+            <input type="text" placeholder="Food Item">
+            <input type="text" placeholder="Calories">
+            <button>Add</button>
+        </div>
+        <div class="output-data">
+            <h3>Calorie Intake</h3>
+            <p>Breakfast: 0</p>
+            <p>Lunch: 0</p>
+            <p>Dinner: 0</p>
+            <p>Snacks: 0</p>
+            <h3>Total: 0</h3>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
